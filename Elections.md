@@ -27,7 +27,7 @@ The election must be run using the main I-UPS google account, with information s
 ## Nominations
 The nomination period will last a week. The Returning Officer will post the nomination form to the I-UPS discord server, which will be open for one full week. 
 
-Nominations will be expected to provide a means of contact, a preferred name, the university that they are from, and a manifesto. Manifestos should be no longer than 200 words. 
+Nominations will be expected to provide a means of contact, a preferred name, the university that they are from, and a manifesto. Manifestos should be no longer than 150 words. 
 ### Who is eligible for nomination
 Members of I-UPS are eligible to stand if they are currently or have previously attended a UK institution that is affiliated with I-UPS. 
 
