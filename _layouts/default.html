@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}" prefix="og: https://ogp.me/ns#">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="img/iups-icon-favicon.ico">
+
+    <meta property="og:title" content='{{ page.meta_title }}'>
+    <meta property="og:site_name" content='I-UPS Comté Elections 2024'>
+    <meta property="og:url" content="https://redrouge1.github.io/TestPage/Elections">
+    <meta property="og:description" content='{{ page.meta_description }}'>
+    <meta property="og:image" content="https://redrouge1.github.io/TestPage/source/images/logo.png">
+    <meta property="og:image:secure_url" content="https://redrouge1.github.io/TestPage/source/images/logo.png">
+    <meta property="og:image:type" content="image/png"> <!-- recommend type -->
+    <meta property="og:image:alt" content='I-UPS Logo'>
+    <meta property="og:image:width" content="1200"> <!-- recommend size -->
+    <meta property="og:image:height" content="1200"> <!-- recommend size -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
+{% seo %}
+    {% include head-custom.html %}
+  </head>
+
+  <body>
+    <style>
+body {
+  background-image: url(''img/IUPSTeamTourLogo.png'');
+  background-repeat: no-repeat;
+}
+    </style>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner" style="background-image: url('img/IUPSTeamTourLogo.png');">  <!--class="inner"-->
+          <!-- <div><img class="iups-img" src="source/images/logo.png" alt="logo" style="width:100px;height:100px;border:0;"/><h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1></div> -->
+          <!--
+          <picture class="iups-picture>
+            <source 
+              media="(min-width: 650px)"
+              srcset="img/IUPSComteElections2024.png"
+              style="width:650px;border:0;">
+            <source 
+              media="(min-width: 465px)"
+              srcset="img/IUPSComteElections2024small.png"
+              style="width:465px;border:0;">
+            <img class="iups-img"
+              src="img/IUPSComteElections2024small.png" 
+              style="width:465px;border:0;"
+              alt="I-UPS Comté Elections 2024">
+          </picture>
+          -->
+          <div class="flex-container">
+            <img class="iups-img"
+              src="img/IUPSComteElections2024small.png" 
+              style="width:465px;border:0;max-width: 90%;max-height: 200vh;display: inline;"
+              alt="I-UPS Comté Elections 2024">
+          </div>
+          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        {{ content }}
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
